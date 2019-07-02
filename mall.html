@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery.js"></script>
+<script src="js/swfobject.js"></script>
+<script src="js/jquery.tip_new.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>建设培训</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript"> 
+//首页左侧划出菜单
+$(function(){
+   $(".menu ul > li.s").bind({
+		mouseenter:function(){
+			var n=$(".menu ul > li.s").index(this);
+			$(this).addClass("current");					
+			var off_top=$(this).offset().top;
+			var off_left=$(this).offset().left;
+			var cli_bot=document.documentElement.clientHeight+Math.max(document.documentElement.scrollTop,document.body.scrollTop)-off_top;
+			if(cli_bot<$(".menulist").eq(n).innerHeight()+10)
+			{off_top=off_top-$(".menulist").eq(n).innerHeight()+cli_bot-10}
+			
+			$(".menulist").eq(n).css({top:off_top,left:off_left+141}).show();
+			
+			},
+		mouseleave:function(){
+			
+			var n=$(".menu ul > li.s").index(this)
+			$(this).removeClass("current");
+			$(".menulist").eq(n).hide();
+		}
+	})
+	$(".menulist").bind({
+		mouseenter:function(){
+			var n=$(".menulist").index(this);
+			$(".menu ul > li.s").eq(n).addClass("current")
+			$(this).show()},
+		mouseleave:function(){
+			var n=$(".menulist").index(this)
+			$(".menu ul > li.s").eq(n).removeClass("current");
+			$(this).hide()
+		}
+	})
+})
+</script>
+<script>
+$(function(){
+	$(".mall_first_right_content_left_2 ul li:eq(0)").mouseover(function(){
+		$(this).addClass("yemian_current");
+		$(this).siblings().removeClass("yemian_current");
+		$(".spy1").show();
+		$(".spy1").siblings().hide();
+	});
+	$(".mall_first_right_content_left_2 ul li:eq(1)").mouseover(function(){
+		$(this).addClass("yemian_current");
+		$(this).siblings().removeClass("yemian_current");
+		$(".spy2").show();
+		$(".spy2").siblings().hide();
+	});
+	$(".mall_first_right_content_left_2 ul li:eq(2)").mouseover(function(){
+		$(this).addClass("yemian_current");
+		$(this).siblings().removeClass("yemian_current");
+		$(".spy3").show();
+		$(".spy3").siblings().hide();
+	});
+	$(".mall_first_right_content_left_2 ul li:eq(3)").mouseover(function(){
+		$(this).addClass("yemian_current");
+		$(this).siblings().removeClass("yemian_current");
+		$(".spy4").show();
+		$(".spy4").siblings().hide();
+	});
+})
+</script>
+<body>
+<div class="top"><span>您好，<a href="login.html">[请登录]</a>，新用户？<a class="zhece_cl" href="write.html">[免费注册]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="###">设为首页</a> | <a href="###">加入收藏</a> | <a href="###">快速导航</a> | <a href="###">最新公告</a></span>欢迎来到中国建设培训协会！</div>
+<div class="nav">
+	<div class="fl"><a href="###"><img src="images/logo.jpg" /></a></div>
+    <ul class="nav_box fr">
+    	<li>
+        	<div class="nav_box_img"><a href="index.html"><img src="images/nav1.jpg" /></a></div>
+            <div class="nav_box_pen"><a href="index.html">网站首页</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="train.html"><img src="images/nav2.jpg" /></a></div>
+            <div class="nav_box_pen2"><a href="train.html">培训信息</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="class.html"><img src="images/nav3.jpg" /></a></div>
+            <div class="nav_box_pen2"><a href="class.html">网络课堂</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="exam.html"><img src="images/nav4.jpg" /></a></div>
+            <div class="nav_box_pen"><a href="exam.html">考试资讯</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="review.html"><img src="images/nav5.jpg" /></a></div>
+            <div class="nav_box_pen"><a href="review.html">考试复习</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="mall.html"><img src="images/nav6.jpg" /></a></div>
+            <div class="nav_box_pen"><a href="mall.html">网上商城</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="center.html"><img src="images/nav7.jpg" /></a></div>
+            <div class="nav_box_pen"><a href="center.html">中心介绍</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="joint.html"><img src="images/nav8.jpg" /></a></div>
+            <div class="nav_box_pen2"><a href="joint.html">合作加盟</a></div>
+        </li>
+        <li>
+        	<div class="nav_box_img"><a href="forum.html"><img src="images/nav9.jpg" /></a></div>
+            <div class="nav_box_pen"><a href="forum.html">论坛</a></div>
+        </li>
+    </ul>
+</div>
+<div class="first">
+	<div class="first_zuo fl">
+    	<div class="shu fl"><a href="topics.html">执业资格</a></div>
+        <div class="heng fl"><a href="topics.html">建筑师</a> <a href="###">结构工程师</a> <a href="###">电气工程师</a> <a href="###">公用设备</a> <a href="###">勘察设计师</a> <a href="###">造价工程师</a> <a href="###">建造师</a> <a href="###">岩土工程师</a> <a href="###">安全工程师</a> <a href="###">城市规划</a> <a href="###">监理工程师</a> <a href="###">咨询工程师</a></div>
+    </div>
+    <div class="first_zhong1 fl">
+    	<div class="shu fl"><a href="post.html">职称岗位</a></div>
+        <div class="heng heng2 fl"><a href="post.html">八大员</a> <a href="###">上岗证</a> <a href="###">职业技能工种</a> <a href="###">资格评审 （经济师 工程师）</a></div>
+    </div>
+    <div class="first_zhong2 fl">
+    	<div class="shu fl"><a href="skill.html">管理技术</a></div>
+        <div class="heng heng3 fl"><a href="skill.html">管理</a> <a href="###">规范</a> <a href="###">展览展示</a> <a href="###">研讨</a> <a href="###">技术</a> <a href="###">出国考察</a></div>
+    </div>
+    <div class="first_you fl">
+    	<div class="shu fl"><a href="education.html">学历教育</a></div>
+        <div class="heng heng4 fl"><a href="education.html">本科</a> <a href="###">硕士</a> <a href="###">中专</a> <a href="###">大专</a></div>
+    </div>
+</div>
+<div class="train_second"><span>中国建设培训协会</span>您当前的位置：<a href="###">网站首页</a> > <a href="###">网上商城</a></div>
+<div class="exam_third_bian">
+	<span class="exam_third_left fl">网上商城</span>
+    <span class="exam_third_right fl"><a href="###">光盘</a> | <a href="###">书籍</a> | <a href="###">储值卡</a> | <a href="###">电子资料</a> | <a href="###">软件</a> | <a href="###">复习资料</a></span>
+</div>
+<div class="mall_first">
+	<div class="mall_first_left fl">
+        <div id="sideBarNav">
+        <div class="fenlei">全部分类</div>
+        <div class="menuListCont">
+        <div class="menu" area="indexmenu" widget_type="area">              
+        <div id="_widget_566" name="html" widget_type="widget" class="widget">
+        <ul class="menuListUl">
+        <li class="s"><a href="###">光盘</a></li>
+        <li class="s"><a href="#">书籍</a></li>
+        <li class="s"><a href="#">储值卡</a></li>
+        <li class="s"><a href="#">电子资料</a></li>
+        <li class="s"><a href="#">软件</a></li>
+        <li class="s"><a href="#">复习资料</a></li>
+        <li class="all"><a href="#">全部课程分类</a></li>
+        </ul>
+        <div class="menulist">
+        <div class="menulistL">
+        <dl>
+        <dt><a href="###">光盘</a></dt>
+        <dd><a href="###">勘察设计师 </a><a href="#">岩土工程师</a><a href="#">环保工程师</a><a href="#">城市规划师</a><a href="#">建筑师作图</a><a href="#"> 一级结构工程师</a><a href="#">二级结构工程师</a><a href="#">电气工程师基础</a><a href="#">公用设备工程师</a><a href="#">电气工程师专业</a></dd>
+        </dl>
+        </div>
+        </div>
+        <div class="menulist">
+        <div class="menulistL">
+        <dl>
+        <dt><a href="###">书籍</a></dt>
+        <dd><a href="###">建筑师</a><a href="#">建造师</a><a href="#">建筑幕墙</a><a href="#">公用设备</a><a href="#">勘察设计师</a><a href="#">环保工程师</a><a href="#">电气工程师</a><a href="#">安全工程师</a><a href="#">城市规划师</a><a href="#">物业管理师</a><a href="#">监理工程师</a><a href="#">造价工程师</a><a href="#">结构工程师</a><a href="#">岩土工程师</a><a href="#">咨询工程师</a><a href="#">历年真题</a></dd>
+        </dl>
+        </div>
+        </div>
+        <div class="menulist">
+        <div class="menulistL">
+        <dl>
+        <dt><a href="###">储值卡</a></dt>
+        <dd><a href="###">10元</a><a href="#">20元</a><a href="#">50元</a><a href="#">100元</a></dd>
+        </dl>
+        </div>
+        </div>
+        <div class="menulist">
+        <div class="menulistL">
+        <dl>
+        <dt><a href="###">电子资料</a></dt>
+        <dd><a href="###">建筑师</a><a href="#">建造师</a><a href="#">电气工程师</a><a href="#">安全工程师</a><a href="###">环保工程师</a><a href="#">城市规划师</a><a href="#">物业管理师</a><a href="#">监理工程师</a><a href="###">造价工程师</a><a href="#">结构工程师</a><a href="#">岩土工程师</a><a href="#">咨询工程师</a></dd>
+        </dl>
+        </div>
+        </div>
+        <div class="menulist">
+        <div class="menulistL">
+        <dl>
+        <dt><a href="###">软件</a></dt>
+        <dd><a href="###">PDF软件</a></dd>
+        </dl>
+        </div>
+        </div>
+        <div class="menulist">
+        <div class="menulistL">
+        <dl>
+        <dt><a href="###">复习资料</a></dt>
+        <dd><a href="###">建筑师</a><a href="#">建造师</a><a href="#">电气工程师</a><a href="#">安全工程师</a><a href="###">环保工程师</a><a href="#">城市规划师</a><a href="#">物业管理师</a><a href="#">监理工程师</a><a href="###">造价工程师</a><a href="#">结构工程师</a><a href="#">岩土工程师</a><a href="#">咨询工程师</a></dd>
+        </dl>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="mall_first_left_second">
+        	<div class="mall_first_left_second_top">学员登录</div>
+            <div class="mall_first_left_second_content">
+            	<div class="mall_first_left_second_content_C">
+                	<span>用户名：</span>
+                    <input type="text" value="请输入您的用户名" />
+                </div>
+                <div class="mall_first_left_second_content_C">
+                	<span>密　码：</span>
+                    <input type="text" value="请输入密码" />
+                </div>
+                <div class="mall_first_left_second_content_D"><a href="###">忘记密码？点此找回</a></div>
+                <div class="mall_first_left_second_content_E">
+                	<input type="button" value="登 录" />
+                    <a href="###">免费注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="mall_first_left_third">
+        	<div class="zixun_top mall_first_left_third_top">
+                <span class="zixun_top_pen8 fl">相关产品</span>
+            </div>
+            <div class="mall_first_left_third_content">
+            	<div class="mall_first_left_third_content_C">
+                	<a href="###"><img src="images/CD1.jpg" /></a>
+                    <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                    <p>牛商价：<span>￥265.00</span></p>
+                </div>
+                <div class="mall_first_left_third_content_C">
+                	<a href="###"><img src="images/CD2.jpg" /></a>
+                    <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                    <p>牛商价：<span>￥265.00</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="mall_first_left_fourth"><a href="###"><img src="images/room.jpg" /></a></div>
+    </div>
+    <div class="mall_first_right fr">
+    	<div class="mall_first_right_top">
+        	<input class="mall_first_right_top_1 fl" type="text" value="请输入您要搜索的信息" />
+            <input class="mall_first_right_top_2 fl" type="button" value="搜 索" />
+            <span class="mall_first_right_top_3 fl">热门搜索： <a href="###">建筑师</a>  <a href="###">建筑师作图</a>  <a href="###">结构工程师</a></span>
+            <div class="mall_first_right_top_4 fr">
+            	<div class="mall_first_right_top_4_left fl"><a href="###"><img src="images/shopping.jpg" /></a></div>
+                <div class="mall_first_right_top_4_right fl">
+                	<p>购物车(<span>0</span>)</p>
+                    <input type="button" />
+                </div>
+            </div>
+        </div>
+        <div class="mall_first_right_content">
+        	<div class="mall_first_right_content_left fl">
+            	<div class="mall_first_right_content_left_1"><a href="###"><img src="images/build.jpg" /></a></div>
+                <div class="mall_first_right_content_left_2">
+                	<h1>热门推荐</h1>
+                    <ul>
+                    	<li class="yemian_current"><a href="###">1</a></li>
+                        <li><a href="###">2</a></li>
+                        <li><a href="###">3</a></li>
+                        <li><a href="###">4</a></li>
+                    </ul>
+                </div>
+                <div class="mall_first_right_content_left_3">
+                	<div class="mall_first_right_content_left_3_nei spy1">
+                    	<ul class="mall_first_right_content_left_3_nei_1">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD7.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD4.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                        </ul>
+                        <ul class="mall_first_right_content_left_3_nei_2">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD4.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD5.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD6.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mall_first_right_content_left_3_nei spy2">
+                    	<ul class="mall_first_right_content_left_3_nei_1">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                        </ul>
+                        <ul class="mall_first_right_content_left_3_nei_2">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD4.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD5.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD6.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mall_first_right_content_left_3_nei spy3">
+                    	<ul class="mall_first_right_content_left_3_nei_1">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                        </ul>
+                        <ul class="mall_first_right_content_left_3_nei_2">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD4.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD5.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD6.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mall_first_right_content_left_3_nei spy4">
+                    	<ul class="mall_first_right_content_left_3_nei_1">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_1_img"><a href="###"><img src="images/CD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_1_price">￥368.00</div>
+                            </li>
+                        </ul>
+                        <ul class="mall_first_right_content_left_3_nei_2">
+                        	<li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD1.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD2.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD3.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD4.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD5.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                            <li>
+                            	<div class="mall_first_right_content_left_3_nei_2_img"><a href="###"><img src="images/VCD6.jpg" /></a></div>
+                                <div class="mall_first_right_content_left_3_nei_2_price">2011年一级注册<br />现价：<span>￥328.00</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mall_first_right_content_left_4"><a href="###">更多>></a>最新上架</div>
+                <div class="mall_first_right_content_left_5">
+                    <div class="mall_first_left_third_content_C product">
+                        <a href="###"><img src="images/CD1.jpg" /></a>
+                        <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                        <p>牛商价：<span>￥265.00</span></p>
+                    </div>
+                    <div class="mall_first_left_third_content_C product">
+                        <a href="###"><img src="images/CD2.jpg" /></a>
+                        <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                        <p>牛商价：<span>￥265.00</span></p>
+                    </div>
+                    <div class="mall_first_left_third_content_C product">
+                        <a href="###"><img src="images/CD3.jpg" /></a>
+                        <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                        <p>牛商价：<span>￥265.00</span></p>
+                    </div>
+                </div>
+                <div class="mall_first_right_content_left_5 noborder">
+                    <div class="mall_first_left_third_content_C product">
+                        <a href="###"><img src="images/CD4.jpg" /></a>
+                        <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                        <p>牛商价：<span>￥265.00</span></p>
+                    </div>
+                    <div class="mall_first_left_third_content_C product">
+                        <a href="###"><img src="images/CD5.jpg" /></a>
+                        <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                        <p>牛商价：<span>￥265.00</span></p>
+                    </div>
+                    <div class="mall_first_left_third_content_C product">
+                        <a href="###"><img src="images/CD6.jpg" /></a>
+                        <h1><a href="###">1000张16开信纸(80g双胶)</a></h1>
+                        <p>牛商价：<span>￥265.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mall_first_right_content_right fr">   
+                <div class="zixun">
+                    <div class="zixun_top">
+                        <span class="zixun_top_pen9 fl">关注排行</span>
+                    </div>
+                    <div class="zixun_content">
+                        <dl class="zixun_content_nei">
+                            <dd>
+                                <span class="lanzi fl">1</span>
+                                <span class="heizi fl"><a href="###">严厉的楼市调控 上海浦东三幅地</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">2</span>
+                                <span class="heizi fl"><a href="###">济南科学实施宏观调控提高</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">3</span>
+                                <span class="heizi fl"><a href="###">汶川地震灾区探索建筑垃圾资源</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">4</span>
+                                <span class="heizi fl"><a href="###">建筑钢价与矿价轮番大跌</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">5</span>
+                                <span class="heizi fl"><a href="###">全国公路建设存资金链断裂风险</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">6</span>
+                                <span class="heizi fl"><a href="###">严厉的楼市调控 上海浦东三幅地</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">7</span>
+                                <span class="heizi fl"><a href="###">济南科学实施宏观调控提高</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">8</span>
+                                <span class="heizi fl"><a href="###">汶川地震灾区探索建筑垃圾资源</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">9</span>
+                                <span class="heizi fl"><a href="###">建筑钢价与矿价轮番大跌</a></span>
+                            </dd>
+                            <dd>
+                                <span class="lanzi fl">10</span>
+                                <span class="heizi fl"><a href="###">全国公路建设存资金链断裂风险</a></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="mall_first_right_content_right_2"><a href="###"><img src="images/building.jpg" /></a></div>
+                <div class="mall_first_right_content_right_2"><a href="###"><img src="images/strange1.jpg" /></a></div>
+                <div class="mall_first_right_content_right_3"><a href="###"><img src="images/strange2.jpg" /></a></div>
+                <div class="mall_first_right_content_right_3"><a href="###"><img src="images/strange3.jpg" /></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mall_second">
+	<dl class="mall_second_content">
+    	<dt><span class="shop1"></span><h1>订购帮助</h1></dt>
+        <dd>・<a href="###">网上订购</a></dd>
+        <dd>・<a href="###">电话订购</a></dd>
+        <dd>・<a href="###">邮寄订购</a></dd>
+    </dl>
+    <dl class="mall_second_content">
+    	<dt><span class="shop2"></span><h1>付款方式</h1></dt>
+        <dd>・<a href="###">网上支付</a></dd>
+        <dd>・<a href="###">邮政汇款</a></dd>
+        <dd>・<a href="###">银行汇款</a></dd>
+    </dl>
+    <dl class="mall_second_content">
+    	<dt><span class="shop3"></span><h1>客户服务</h1></dt>
+        <dd>・<a href="###">订单查询</a></dd>
+        <dd>・<a href="###">电话查询</a></dd>
+        <dd>・<a href="###">传真查询</a></dd>
+    </dl>
+    <dl class="mall_second_content">
+    	<dt><span class="shop4"></span><h1>配送方式</h1></dt>
+        <dd>・<a href="###">速递安排</a></dd>
+        <dd>・<a href="###">送货上门</a></dd>
+        <dd>・<a href="###">普通邮寄</a></dd>
+        <dd>・<a href="###">EMS安排</a></dd>
+    </dl>
+    <dl class="mall_second_content">
+    	<dt><span class="shop5"></span><h1>服务保证</h1></dt>
+        <dd>・<a href="###">商品退换</a></dd>
+        <dd>・<a href="###">客户回访</a></dd>
+        <dd>・<a href="###">诚信安全</a></dd>
+    </dl>
+    <dl class="mall_second_content">
+    	<dt><span class="shop6"></span><h1>关于我们</h1></dt>
+        <dd>・<a href="###">商城简介</a></dd>
+        <dd>・<a href="###">企业文化</a></dd>
+        <dd>・<a href="###">联系方式</a></dd>
+    </dl>
+</div>
+<div class="ninth"><a href="###">关于我们</a> | <a href="###">版权声明</a> | <a href="###">免责条款</a> | <a href="###">网站合作</a> | <a href="###">联系我们</a> | <a href="###">网站地图</a> | <a href="###">友情链接</a> | <a href="###">人才招聘</a>
+</div>
+<div class="tenth">Copyright<span>&copy;</span>2004-2011 by gjjp.org All rights reserved.  中国建设培训协会（培训中心）版权所有<br />
+备案号：京ICP备09087973号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京网站建设：联合易网
+</div>
+</body>
+</html>
